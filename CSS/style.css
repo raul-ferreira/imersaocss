@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-size: auto 100vh;
+  background-size: auto 100%;
   height: 100vh;
   background-color: whitesmoke;
   /* font-size: 10px; */
@@ -28,9 +28,10 @@ body {
 header{
   align-items: center;
   background-image: url("../img/fundo_background.jpg");
-  background-size: 100%;
+  background-size: 100vw 80vh;
+  background-repeat: no-repeat;
   display: flex;
-  height: 80vh;
+  height: 70vh;
   justify-content: center;
 }
 
@@ -84,7 +85,7 @@ a:hover{
 }
 
 .caixa {
-  width: 1080px;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -94,7 +95,7 @@ a:hover{
 
 .caixa h2 {
   font-size: 3rem;
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem 2rem;
   padding-top: 4.5rem;
   font-family: 'Comfortaa', cursive;
 }
@@ -103,6 +104,8 @@ a:hover{
   margin: 0 0 2rem 0;
   font-size: 2.3rem;
 }
+
+
 
 .grid {
   display: grid;
@@ -118,6 +121,21 @@ margin-bottom: 1rem;
 .grid figcaption {
   margin-bottom: 1.5rem;
 }
+
+@media (max-width:400px) {
+  .grid{
+    grid-template-columns: 15rem;
+    
+  }
+
+  .img-altura {
+    width: 100vw;
+  }
+  .img-largura{
+    width: 100vw;
+  }
+}
+
 
 .foto_sobre {
   float: left;
@@ -135,6 +153,7 @@ margin-bottom: 1rem;
 .icons {
   margin: 2.5rem 0;
   text-align: center;
+  width: 1rem;
 }
 
 .contato a {
